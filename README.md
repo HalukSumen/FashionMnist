@@ -79,3 +79,7 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 
 This line is also a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
