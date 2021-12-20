@@ -90,10 +90,18 @@ As a result, I saw these scores.
 
 
 Test Loss is __0.2166__
+
+
 Test Accuracy is __0.9236__
 
+
+
 The Best accuracy is for Trousers(Class 1), Sandals(Class 5) with __0.99__ and worst accuracy is Shirt(Class 6) with __0.78__.
+
+
 The Best recall is for Trousers(Class 1), with __0.99__ and worst recall is Shirt(Class 6) with __0.79__
+
+
 The Best F-1 Score is for Trousers(Class 1) with __0.99__ and worst F-1 Score is Shirt(Class 6) with __0.78__
 
 
