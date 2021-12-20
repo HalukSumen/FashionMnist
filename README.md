@@ -11,6 +11,10 @@ Fashion-MNIST is a dataset of Zalando's article images consisting of a training 
 
 * To locate a pixel on the image, suppose that we have decomposed x as x = i * 28 + j, where i and j are integers between 0 and 27. The pixel is located on row i and column j of a 28 x 28 matrix.
 * For example, pixel31 indicates the pixel that is in the fourth column from the left, and the second row from the top, as in the ascii-diagram below.
+* Each row is a separate image.
+* Column 1 is the class label.
+* Remaining columns are pixel numbers (784 total).
+* Each value is the darkness of the pixel (1 to 255).
 
 Each training and test example is assigned to one of the following labels:
 
@@ -25,14 +29,6 @@ Each training and test example is assigned to one of the following labels:
 * __8 Bag__
 * __9 Ankle boot__
 
-
-
-
-* __Each row is a separate image.__
-* __Column 1 is the class label.__
-* __Remaining columns are pixel numbers (784 total).__
-* __Each value is the darkness of the pixel (1 to 255).__
-
 ### 3 - Exploratory Data Analysis
 
 Firslty, I checked data, which came two different dataset which are train and test. Later I checked distribution of labels in datasets and I create a list for expressing images for both datasets, moreover I see all the classes(labels) equally distributed. So I dont need to do Oversampling or Undersampling. 
@@ -45,20 +41,36 @@ For preparing datasets to the model I made data processing which is reshaping co
 
 !!!  IMAGES WILL UPLOAD SOON!!!
 
-
 ### 6 - Modelling 
 
+I used Sequential model. The sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor. Then I add Conv2D layer, MaxPooling2D, Flatten and Dense. For each layer I used these parameters.
+
+* __Conv2D__
+* filters = 32
+* kernel_size = (3,3)
+* activation function = relu 
+* kernel_initializer = normal
+* input_shape = (28,28,1)
+
+* __MaxPooling2D__
+* pool_size = (2,2)
+
+
+* __Conv2D__
+* filters = 64
+* kernel_size = (3,3)
+* activation function = relu 
+
+* __Flatten__
+* A flatten operation on a tensor reshapes the tensor to have the shape that is equal to the number of elements contained in tensor non including the batch dimension and doesnt need any parameters.
+
+* __Dense__
+In first Dense Layer,
+* units = 128
+* activation function = relu
+In second Dense Layer,
+* units = 10
+* activation function = softmax
 
 ### 7 - Result & Future Work
 
-* __Logistic Regression Score:__ 0.6460699681962744
-* __K Neighbors Classifier Score:__ 0.6338028169014085
-* __DecisionTree Classifier Score:__ 0.8391640163562017
-* __Random Forest Classifier Score:__ 0.8727850976828714
-* __AdaBoost Classifier Score:__ 0.5483870967741935
-* __Gradient Boosting Classifier Score:__ 0.8714220808723308
-* __XGB Classifier Score:__ 0.7878237164925034
-* __ExtraTree Classifier Score:__ 0.8632439800090868
-* __Bagging Classifier Score:__ 0.8514311676510677
-
-According the scores,Random Forest Classifier gives best result with __0.872785__. Also Gradient Boosting is gives very close to Random Forest Classifier with __0.871422__, and finally AdaBoost is give the worst performance with __0.548387__. In the end Random Forest Classifier gives the best result but maybe tuning with XGB increase its score.  
