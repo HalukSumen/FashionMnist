@@ -26,20 +26,25 @@ TL;DR
 In this project I made Exploratory Data Analysis, Data Visualisation and lastly Modelling which I did with 9 different models. In Exploratory Data Analysis I cleaned irrelevant data,NaN values and change data types for easiness. In second part, I would like to show data in plots.Such as, number of places according to their types and according to province. Later these processes I looked Pearson Correlation and Spearman Correlation which they gave very similar result as expected. Before modelling I prepared data training and testing. My testing size is __0.33__. Then I applied for each model, the algorithms I used for these project are Logistic Regression, K Neighbors Classification, Decision Tree Classification, Random Forest Classification, AdaBoost Classification, Gradient Boosting Classification, XGB Classification, ExtraTrees Classification, Bagging Classification. Finally, Random Forest Classifier gives the best result but tuning with algorithms or cleaning the data more(I believe it will decrease the size of dataset alot) can be effective.
 
 ### 2 - Data
-Fashion-MNIST is a dataset of Zalando's article images consisting of a training set of __60,000__ examples and a test set of 10,000 examples. Each example is a __28x28__ grayscale image, associated with a label from __10__ labels.
+Fashion-MNIST is a dataset of Zalando's article images consisting of a training set of __60,000__ examples and a test set of 10,000 examples. Each example is a __28x28__ grayscale image, associated with a label from __10__ labels.Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher numbers meaning darker. This pixel-value is an integer between 0 and 255. The training and test data sets have 785 columns. The first column consists of the class labels (see above), and represents the article of clothing. The rest of the columns contain the pixel-values of the associated image.
+
+* To locate a pixel on the image, suppose that we have decomposed x as x = i * 28 + j, where i and j are integers between 0 and 27. The pixel is located on row i and column j of a 28 x 28 matrix.
+* For example, pixel31 indicates the pixel that is in the fourth column from the left, and the second row from the top, as in the ascii-diagram below.
 
 Each training and test example is assigned to one of the following labels:
 
-* 0 T-shirt/top
-* 1 Trouser
-* 2 Pullover
-* 3 Dress
-* 4 Coat
-* 5 Sandal
-* 6 Shirt
-* 7 Sneaker
-* 8 Bag
-* 9 Ankle boot
+* __0 T-shirt/top__
+* __1 Trouser__
+* __2 Pullover__
+* __3 Dress__
+* __4 Coat__
+* __5 Sandal__
+* __6 Shirt__
+* __7 Sneaker__
+* __8 Bag__
+* __9 Ankle boot__
+
+
 
 
 * __Each row is a separate image.__
