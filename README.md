@@ -89,11 +89,11 @@ Finally I am compiling model according these parameters,
 As a result, I saw these scores.
 
 
-Test Loss is __0.2113__
-Test Accuracy is __0.9268__
+Test Loss is __0.2166__
+Test Accuracy is __0.9236__
 
-The Best accuracy is for Trousers(Class 1) with __1.00__ and worst accuracy is Shirt(Class 6) with __0.81__.
-The Best recall is for Trousers(Class 1), Sandals(Class 5), Ankle Boot(Class 9) with __0.99__ and worst recall is Shirt(Class 6) with __0.79__
-The Best F-1 Score is for Trousers(Class 1), Sandals(Class 5), Bag(Class 8) with __0.99__ and worst F-1 Score is Shirt(Class 6) with __0.80__
+The Best accuracy is for Trousers(Class 1), Sandals(Class 5) with __0.99__ and worst accuracy is Shirt(Class 6) with __0.78__.
+The Best recall is for Trousers(Class 1), with __0.99__ and worst recall is Shirt(Class 6) with __0.79__
+The Best F-1 Score is for Trousers(Class 1) with __0.99__ and worst F-1 Score is Shirt(Class 6) with __0.78__
 
-Normally I presume data is overfitting so for this reason in the future can be make data augmentation or increasing size of datasets.  
+
