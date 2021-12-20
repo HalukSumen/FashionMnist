@@ -62,24 +62,34 @@ __3.Conv2D__
 * activation function = relu 
 
 __4.Flatten__
-* A flatten operation on a tensor reshapes the tensor to have the shape that is equal to the number of elements contained in tensor non including the batch dimension and doesnt need any parameters.
+
+
+A flatten operation on a tensor reshapes the tensor to have the shape that is equal to the number of elements contained in tensor non including the batch dimension and doesnt need any parameters.
 
 __5.Dense__
-* In first Dense Layer,
+
+
+In first Dense Layer,
 * units = 128
 * activation function = relu
-* In second Dense Layer,
+
+
+In second Dense Layer,
 * units = 10
 * activation function = softmax
 
+Finally I am compiling model according these parameters,
+
+* loss = categorical cross entrophy
+* optimizer = adam
+* metrics = accuracy
+
 ### 7 - Result & Future Work
-Here's a line for us to start with.
 
-This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+As a result, I saw these scores.
 
-This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
+
+Test Loss is __0.2113__
+Test Accuracy is __0.9268__
+
+Best accuracy is for Trousers(Class 1) with __1.00__ and worst accuracy is Shirt(Class 6) with __0.81__.
