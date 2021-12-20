@@ -4,7 +4,7 @@
 
 ### 1 - Abstract
 
-In this project I made Exploratory Data Analysis, Data Visualisation and lastly Modelling .
+In this project I made Exploratory Data Analysis, Data Visualisation and lastly Modelling. Fashion Mnist Dataset contains 70000 row in two files. Each example is 28x28 image and associated with __10__ labels(targets). After examining the dataset I made data preprocessing for reshaping columns from __784__ to __(28,28,1)__ and save the target feature as a seperate vector. In modelling part, with a sequential model with multiple convolution layers with __50__ Epochs for training the data. For prediction overfitting and underfitting I adjust Dropout Layers. Overally, model gives __0.9236__ accuracy. Furthermore with Data augmentation and/or incresing data size can be helpful for taking better result. 
 
 ### 2 - Data
 Fashion-MNIST is a dataset of Zalando's article images consisting of a training set of __60,000__ examples and a test set of 10,000 examples. Each example is a __28x28__ grayscale image, associated with a label from __10__ labels.Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher numbers meaning darker. This pixel-value is an integer between 0 and 255. The training and test data sets have 785 columns. The first column consists of the class labels (see above), and represents the article of clothing. The rest of the columns contain the pixel-values of the associated image.
@@ -86,7 +86,7 @@ Finally I am compiling model according these parameters,
 
 ### 7 - Result & Future Work
 
-As a result, I saw these scores.
+As a result, my model gives overally good results. 
 
 
 Test Loss is __0.2166__
@@ -104,4 +104,6 @@ The Best recall is for Trousers(Class 1), with __0.99__ and worst recall is Shir
 
 The Best F-1 Score is for Trousers(Class 1) with __0.99__ and worst F-1 Score is Shirt(Class 6) with __0.78__
 
+
+For better results, data augmentation can be implemented or data size can be expandable. 
 
