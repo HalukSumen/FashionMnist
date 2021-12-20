@@ -45,26 +45,26 @@ For preparing datasets to the model I made data processing which is reshaping co
 
 I used Sequential model. The sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor. Then I add Conv2D layer, MaxPooling2D, Flatten and Dense. For each layer I used these parameters.
 
-* __Conv2D__
+__Conv2D__
 * filters = 32
 * kernel_size = (3,3)
 * activation function = relu 
 * kernel_initializer = normal
 * input_shape = (28,28,1)
 
-* __MaxPooling2D__
+__MaxPooling2D__
 * pool_size = (2,2)
 
 
-* __Conv2D__
+__Conv2D__
 * filters = 64
 * kernel_size = (3,3)
 * activation function = relu 
 
-* __Flatten__
+__Flatten__
 * A flatten operation on a tensor reshapes the tensor to have the shape that is equal to the number of elements contained in tensor non including the batch dimension and doesnt need any parameters.
 
-* __Dense__
+__Dense__
 In first Dense Layer,
 * units = 128
 * activation function = relu
