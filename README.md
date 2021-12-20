@@ -65,10 +65,10 @@ __4.Flatten__
 * A flatten operation on a tensor reshapes the tensor to have the shape that is equal to the number of elements contained in tensor non including the batch dimension and doesnt need any parameters.
 
 __5.Dense__
-*In first Dense Layer,
+* In first Dense Layer,
 * units = 128
 * activation function = relu
-*In second Dense Layer,
+* In second Dense Layer,
 * units = 10
 * activation function = softmax
 
