@@ -29,6 +29,20 @@ Each training and test example is assigned to one of the following labels:
 * __8 Bag__
 * __9 Ankle boot__
 
+<p align="center">
+  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/train%20data%20example.png">
+</p>
+<p align="center">
+     <b>Train Dataset Example</b>
+</p>
+
+<p align="center">
+  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/test%20data%20example.png">
+</p>
+<p align="center">
+   <b>Test Dataset Example</b>
+</p>
+
 ### 3 - Exploratory Data Analysis
 
 Firslty, I checked data, which came two different dataset which are train and test. Later I checked distribution of labels in datasets and I create a list for expressing images for both datasets, moreover I see all the classes(labels) equally distributed. So I dont need to do Oversampling or Undersampling. 
