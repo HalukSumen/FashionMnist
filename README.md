@@ -51,11 +51,21 @@ Firslty, I checked data, which came two different dataset which are train and te
 
 For preparing datasets to the model I made data processing which is reshaping columns from (784) to (28,28,1), and for seperate vector I save label feature then process test and train data. After that I split train set into train and validation dataset. Validation set contains %30 of original train dataset and split will be 0.7/0.03. Later this process I controlled distribution of labels in train dataset and validation dataset.
 
-### 5 - Data Visualization
+<p align="center">
+  <img width="750" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/number%20of%20items%20in%20each%20class%20in%20dataset.png">
+</p>
+<p align="center">
+   <b>Number of Items in Each Class in Dataset</b>
+</p>
 
-!!!  IMAGES WILL UPLOAD SOON!!!
+<p align="center">
+  <img width="750" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/number%20of%20items%20in%20each%20class%20in%20validation%20dataset.png">
+</p>
+<p align="center">
+   <b>Number of Items in Each Class in Validation Dataset</b>
+</p>
 
-### 6 - Modelling 
+### 5 - Modelling 
 
 I used Sequential model. The sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor. Then I add Conv2D layer, MaxPooling2D, Flatten and Dense. For each layer I used these parameters.
 
@@ -98,15 +108,49 @@ Finally I am compiling model according these parameters,
 * optimizer = adam
 * metrics = accuracy
 
-### 7 - Result & Future Work
+### 6 - Result & Future Work
 
 As a result, my model gives overally good results. 
 
+<p align="center">
+  <img width="750" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/accuracy.png">
+</p>
+<p align="center">
+   <b>Accuracy of the Model</b>
+</p>
+
+<p align="center">
+  <img width="750" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/loss.png">
+</p>
+<p align="center">
+   <b>Loss of the Model</b>
+</p>
 
 Test Loss is __0.2166__
 
 
 Test Accuracy is __0.9236__
+
+
+<p align="center">
+  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/classification%20report.png">
+</p>
+<p align="center">
+   <b>Classification Report</b>
+</p>
+<p align="center">
+  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/true%20prediction.png">
+</p>
+<p align="center">
+   <b>Correctly Predicted Items</b>
+</p>
+<p align="center">
+  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/false%20prediction.png">
+</p>
+<p align="center">
+   <b>Falsely Predicted Items</b>
+</p>
+
 
 
 
