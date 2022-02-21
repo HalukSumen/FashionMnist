@@ -133,7 +133,7 @@ Test Accuracy is __0.9236__
 
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/classification%20report.png">
+  <img width="500" height="400" src="https://github.com/HalukSumen/FashionMnist/blob/main/images/classification%20report.png">
 </p>
 <p align="center">
    <b>Classification Report</b>
