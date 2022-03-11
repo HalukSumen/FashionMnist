@@ -45,7 +45,7 @@ Each training and test example is assigned to one of the following labels:
 
 ### 3 - Exploratory Data Analysis
 
-Firslty, I checked data, which came two different dataset which are train and test. Later I checked distribution of labels in datasets and I create a list for expressing images for both datasets, moreover I see all the classes(labels) equally distributed. So I dont need to do Oversampling or Undersampling. 
+Firstly, I checked data, which came two different dataset which are train and test. Later I checked distribution of labels in datasets and I create a list for expressing images for both datasets, moreover I see all the classes(labels) equally distributed. So I dont need to do Oversampling or Undersampling. 
 
 ### 4 - Data Preprocessing
 
